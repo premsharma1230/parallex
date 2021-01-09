@@ -1,0 +1,175 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+
+    font-size: 15px;
+    background: #ffffff;
+	line-height: 1.4;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+@mixin flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+// ::-webkit-scrollbar{
+//   z-index: 10;
+// }
+
+main{
+	// width: 100vw;
+	// height: 100vh;
+	// overflow-y: scroll;
+	// overflow-x: hidden;
+	header{
+		background: #1F85DE;
+		position: fixed;
+		width: 100%;
+		padding: .5rem 0;
+		margin:0 0 1rem;
+		nav{
+			@include flex;
+			justify-content:space-between;
+			.Lnav-item{
+				width:200px;
+				h2{
+					color: #ffffff;
+					font-size: 2em;
+					font-weight: bold;
+					font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+				}
+			}
+			.Rnav-item{
+				width:70%;
+				ul{
+					@include flex;
+					justify-content: flex-end;
+					li{
+						list-style-type: none;
+						padding:.5rem 1rem;
+						margin: .5rem .5rem;
+						a{
+							text-decoration: none;
+							color: rgb(255, 255, 255);
+							text-transform: capitalize;
+							font-size: 1em;
+						}
+					}
+				}
+			}
+		}
+	}
+	.winter_wrapper {
+		padding: 5rem 0 0;
+		min-height: calc(100vh - 2px);
+		background: #eee;
+		.winter-content{
+			@include flex;	
+			justify-content: space-between;
+		.cmn02{
+			width: 48%;
+			.blocket{
+				padding: 1rem;
+				border-radius: 5px;
+				box-shadow: 3px 5px 3px 2px #0000001a;
+				h1{
+					font-size: 1.2em;
+					text-transform: capitalize;
+					font-weight: bold;
+					padding:.5rem 0;
+				}
+				p{
+					font-size: 1em;
+					text-transform: capitalize;
+					padding: 1rem 0;
+					line-height: 1.5;
+				}
+				a{
+					display: block;
+					margin:1rem;
+					font-size: 1rem;
+					text-transform: capitalize;
+					padding: .6rem 2.4rem;
+					border-radius: 5px;
+					background: #1F85DE;
+					text-decoration: none;
+					width: 170px;
+					text-decoration: none;
+					text-align: center;
+					color: #ffffff;
+					transition: all .3s ease-in-out;
+					&:hover{
+						transition: all .3s ease-in-out;
+                        opacity: .70;
+					} 
+				}
+			}
+			figure{
+				img{
+					max-width: 100%;
+				}
+			}
+          }
+		}
+	}
+.winter5,.winter6{
+	padding: 1rem 0!important;
+}
+}
+// .section_Wrapper{
+// 	width:400vw;
+// 	display: flex;
+// 	flex-direction: row;
+// }
+.section_Wrapper{
+	display: flex;
+	position: fixed;
+	left: 0;
+	top:0;
+	width: 100%;
+	section{
+	   min-width: 100%;
+	   height: auto;
+	   @include flex;
+	   height: 100vh;
+	   .container{
+		   max-width: 800px;
+		   padding: 40px;
+
+	   }
+	}
+}

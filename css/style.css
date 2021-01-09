@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  background: #ffffff;
+  line-height: 1.4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main header {
+  background: #1F85DE;
+  position: fixed;
+  width: 100%;
+  padding: .5rem 0;
+  margin: 0 0 1rem;
+}
+
+main header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main header nav .Lnav-item {
+  width: 200px;
+}
+
+main header nav .Lnav-item h2 {
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main header nav .Rnav-item {
+  width: 70%;
+}
+
+main header nav .Rnav-item ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main header nav .Rnav-item ul li {
+  list-style-type: none;
+  padding: .5rem 1rem;
+  margin: .5rem .5rem;
+}
+
+main header nav .Rnav-item ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+  font-size: 1em;
+}
+
+main .winter_wrapper {
+  padding: 5rem 0 0;
+  min-height: calc(100vh - 2px);
+  background: #eee;
+}
+
+main .winter_wrapper .winter-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .winter_wrapper .winter-content .cmn02 {
+  width: 48%;
+}
+
+main .winter_wrapper .winter-content .cmn02 .blocket {
+  padding: 1rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 5px 3px 2px #0000001a;
+          box-shadow: 3px 5px 3px 2px #0000001a;
+}
+
+main .winter_wrapper .winter-content .cmn02 .blocket h1 {
+  font-size: 1.2em;
+  text-transform: capitalize;
+  font-weight: bold;
+  padding: .5rem 0;
+}
+
+main .winter_wrapper .winter-content .cmn02 .blocket p {
+  font-size: 1em;
+  text-transform: capitalize;
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+
+main .winter_wrapper .winter-content .cmn02 .blocket a {
+  display: block;
+  margin: 1rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  padding: .6rem 2.4rem;
+  border-radius: 5px;
+  background: #1F85DE;
+  text-decoration: none;
+  width: 170px;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+main .winter_wrapper .winter-content .cmn02 .blocket a:hover {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  opacity: .70;
+}
+
+main .winter_wrapper .winter-content .cmn02 figure img {
+  max-width: 100%;
+}
+
+main .winter5, main .winter6 {
+  padding: 1rem 0 !important;
+}
+
+.section_Wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.section_Wrapper section {
+  min-width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100vh;
+}
+
+.section_Wrapper section .container {
+  max-width: 800px;
+  padding: 40px;
+}
+/*# sourceMappingURL=style.css.map */
